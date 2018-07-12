@@ -1,0 +1,22 @@
+{
+  "name": "LLRouter",
+  "version": "1.0",
+  "summary": "路径跳转 传值  工程内跳转 多个子工程之间调整 --李龙",
+  "description": "use for LLRouter module.\nIt’s awesome!!",
+  "homepage": "https://github.com/LiGuanWen/LLRouter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lilong": "diqidaimu@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/LiGuanWen/LLRouter.git",
+    "tag": "1.0"
+  },
+  "source_files": "LLRouterClass/**/*.{h,m}"
+}
