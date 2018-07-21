@@ -11,7 +11,7 @@
 #define LLSPEED_SCHEME @"llspeed"
 
 //开始页面
-static NSString *const llspeed_routeWithBegin = @"llspeed://game/begin";
+static NSString *const llspeed_routerWithBegin = @"llspeed://game/begin";
 
 
 @interface LLSpeedRouter : NSObject
@@ -29,5 +29,5 @@ static NSString *const llspeed_routeWithBegin = @"llspeed://game/begin";
  @param hidesBottomBarWhenPushed 是否隐藏tabbar
  @param parameterDict 需要传递的参数
  */
-+ (LLSpeedRouter *)routeWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict;
++ (LLSpeedRouter *)routerWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict;
 @end

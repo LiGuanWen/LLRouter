@@ -19,7 +19,7 @@
 
 
 //开始页面
-static NSString *const llgb_routeWithHomeBegin = @"LLRouter://home/begin";
+static NSString *const llgb_routerWithHomeBegin = @"LLRouter://home/begin";
 
 
 @interface LLModuleInfo : NSObject
@@ -46,7 +46,7 @@ static NSString *const llgb_routeWithHomeBegin = @"LLRouter://home/begin";
  @param hidesBottomBarWhenPushed 是否隐藏tabbar
  @param parameterDict 需要传递的参数
  */
-+ (LLRouter *)routeWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict;
++ (LLRouter *)routerWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict;
 
 
 /**
@@ -59,7 +59,7 @@ static NSString *const llgb_routeWithHomeBegin = @"LLRouter://home/begin";
 ///**
 // 跳转前缀
 // */
-//+(NSString *)routeName
+//+(NSString *)routerName
 //{
 //    return LLRouter_SCHEME;
 //}
@@ -70,7 +70,7 @@ static NSString *const llgb_routeWithHomeBegin = @"LLRouter://home/begin";
 // @param schemeUrl schemeUrl参数
 // @param dic 其他特殊参数
 // */
-//+ (void)routeToSchemeUrl:(NSURL *)schemeUrl parameter:(NSMutableDictionary *)dic{
+//+ (void)routerToSchemeUrl:(NSURL *)schemeUrl parameter:(NSMutableDictionary *)dic{
 //    UIViewController *vc = [dic objectForKey:CURRENT_VC_KEY];
 //    NSLog(@"currvc class = %@",[vc class]);
 //    NSString *hidesBottomStr = [dic objectForKey:HIDESBOTTOMBARWHENPUSHED_KEY];

@@ -37,7 +37,7 @@
 /**
  跳转前缀
  */
-+(NSString *)routeName
++(NSString *)routerName
 {
     return LLRouter_SCHEME;
 }
@@ -48,7 +48,7 @@
  @param schemeUrl schemeUrl参数
  @param dic 其他特殊参数
  */
-+ (void)routeToSchemeUrl:(NSURL *)schemeUrl parameter:(NSMutableDictionary *)dic{
++ (void)routerToSchemeUrl:(NSURL *)schemeUrl parameter:(NSMutableDictionary *)dic{
     UIViewController *vc = [dic objectForKey:CURRENT_VC_KEY];
     NSLog(@"currvc class = %@",[vc class]);
     NSString *hidesBottomStr = [dic objectForKey:HIDESBOTTOMBARWHENPUSHED_KEY];
@@ -68,7 +68,7 @@
  @param hidesBottomBarWhenPushed 是否隐藏tabbar
  @param parameterDict 需要传递的参数
  */
-+ (LLRouter *)routeWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict{
++ (LLRouter *)routerWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict{
     LLRouter *router = [[LLRouter alloc] initWithUrl:url currentVC:currentVC hidesBottomBarWhenPushed:hidesBottomBarWhenPushed parameterDict:parameterDict];
     return router;
 }
@@ -102,13 +102,13 @@
 - (void)startParsingWithUrl:(NSURL *)url{
     NSString *scheme = url.scheme;
     NSMutableDictionary *dict = [LLRouterManager sharedManager].routerDict;
-    NSArray *routeKeyArr = [dict allKeys];
+    NSArray *routerKeyArr = [dict allKeys];
     //属于注册路径中的跳转
-    for (int i = 0; i < routeKeyArr.count; i++) {
-        NSString *routeName = routeKeyArr[i];
-        if ([scheme hasPrefix:routeName]) {
-            Class routeClass = [dict objectForKey:routeName];
-            [self routeToSchemeUrl:url routeName:routeName routeClass:routeClass];
+    for (int i = 0; i < routerKeyArr.count; i++) {
+        NSString *routerName = routerKeyArr[i];
+        if ([scheme hasPrefix:routerName]) {
+            Class routerClass = [dict objectForKey:routerName];
+            [self routerToSchemeUrl:url routerName:routerName routerClass:routerClass];
             return;
         }
     }
@@ -131,14 +131,14 @@
  *
  *  @param schemeUrl url
  */
--(void)routeToSchemeUrl:(NSURL *)schemeUrl routeName:(NSString *)routeName routeClass:(Class)routeClass{
+-(void)routerToSchemeUrl:(NSURL *)schemeUrl routerName:(NSString *)routerName routerClass:(Class)routerClass{
     if ([self canOpenURL:schemeUrl]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-        SEL routeSelector = @selector(routeToSchemeUrl:parameter:);
+        SEL routerSelector = @selector(routerToSchemeUrl:parameter:);
         
 #pragma clang diagnostic pop
-        if(routeClass && [routeClass respondsToSelector:routeSelector]){
+        if(routerClass && [routerClass respondsToSelector:routerSelector]){
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
@@ -161,7 +161,7 @@
 //                    [newDict setValuesForKeysWithDictionary:moduleInfo.parameter];
 //                }
 //            }
-            [routeClass performSelector:routeSelector withObject:schemeUrl withObject:newDict];
+            [routerClass performSelector:routerSelector withObject:schemeUrl withObject:newDict];
 #pragma clang diagnostic pop
         }
     }else{

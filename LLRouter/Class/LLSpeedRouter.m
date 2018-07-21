@@ -15,7 +15,7 @@
 /**
  跳转前缀
  */
-+(NSString *)routeName{
++(NSString *)routerName{
     return LLSPEED_SCHEME;
 }
 
@@ -25,7 +25,7 @@
  @param schemeUrl scheme参数
  @param dic 其他特殊参数
  */
-+ (void)routeToSchemeUrl:(NSURL *)schemeUrl parameter:(NSMutableDictionary *)dic{
++ (void)routerToSchemeUrl:(NSURL *)schemeUrl parameter:(NSMutableDictionary *)dic{
     UIViewController *currentVC = [dic objectForKey:CURRENT_VC_KEY];
     NSLog(@"当前页面  currvc class = %@",[currentVC class]);
     NSString *hidesBottomStr = [dic objectForKey:HIDESBOTTOMBARWHENPUSHED_KEY];
@@ -35,7 +35,7 @@
     }else{
         hidesBottom = NO;
     }
-    [LLSpeedRouter routeWithUrl:schemeUrl currentVC:currentVC hidesBottomBarWhenPushed:hidesBottom parameterDict:dic];
+    [LLSpeedRouter routerWithUrl:schemeUrl currentVC:currentVC hidesBottomBarWhenPushed:hidesBottom parameterDict:dic];
 }
 
 /**
@@ -46,9 +46,9 @@
  @param hidesBottomBarWhenPushed 是否隐藏tabbar
  @param parameterDict 需要传递的参数
  */
-+ (LLSpeedRouter *)routeWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict{
-    LLSpeedRouter *route = [[LLSpeedRouter alloc] initWithUrl:url currentVC:currentVC hidesBottomBarWhenPushed:hidesBottomBarWhenPushed parameterDict:parameterDict];
-    return route;
++ (LLSpeedRouter *)routerWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed parameterDict:(NSMutableDictionary *)parameterDict{
+    LLSpeedRouter *router = [[LLSpeedRouter alloc] initWithUrl:url currentVC:currentVC hidesBottomBarWhenPushed:hidesBottomBarWhenPushed parameterDict:parameterDict];
+    return router;
 }
 
 - (id)initWithUrl:(NSURL *)url currentVC:(UIViewController *)currentVC hidesBottomBarWhenPushed:(BOOL)yes parameterDict:(NSMutableDictionary *)parameterDict{
@@ -72,7 +72,7 @@
 -(void)startParsingWithUrl:(NSURL *)url{
     NSString *scheme = url.scheme;
     if ([scheme hasPrefix:LLSPEED_SCHEME]) {
-        [self routeToModule:[LLRouter getModuleInfo:url]];
+        [self routerToModule:[LLRouter getModuleInfo:url]];
     }else if ([scheme isEqualToString:@"http"]||[scheme isEqualToString:@"https"]||[scheme isEqualToString:@"ftp"])
     {
         [self parseToOtherLinkWithUrl:url.absoluteString];
@@ -91,10 +91,10 @@
  *
  *  @param moduleInfo url description
  */
--(void)routeToModule:(LLModuleInfo*)moduleInfo{
+-(void)routerToModule:(LLModuleInfo*)moduleInfo{
     if ([moduleInfo.moduleName isEqualToString:@"game"]) {
         //
-        [self routeToGameWithModule:moduleInfo];
+        [self routerToGameWithModule:moduleInfo];
     }
     
 }
@@ -120,7 +120,7 @@
 }
 
 
-- (void)routeToGameWithModule:(LLModuleInfo*)moduleInfo{
+- (void)routerToGameWithModule:(LLModuleInfo*)moduleInfo{
     //开始
     if ([moduleInfo.page isEqualToString:@"/begin"]) {
         [LLSpeedRouter pushToGameBeginWithCurrVC:self.currentVC];

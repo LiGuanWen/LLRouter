@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02D1675F188FF800BA3C9AE2E2293962 /* LLRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC398EA43EFA2B2A3CE4B4C4B9E3BE /* LLRouterManager.m */; };
-		032981E6676F9A5F2356BC12DB3C8FF1 /* LLRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9574E7A8F951E86BA19C4F6A19EBD6 /* LLRouter-dummy.m */; };
-		3F2A6BC9EBDB5ED81807347788082A2C /* LLRouterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B4F8458CCF42FFE1AD1BEBDFA39A8D /* LLRouterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C07E8C033AC3F36AC9F51D09D38E2025 /* LLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D0DF7238DA40EF58E89F3E118B172B /* LLRouter.m */; };
-		DBA99A25517AC597C61673B4B2C616E8 /* LLRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B62B0EA19E6864DAFEA66D17E8E08C33 /* LLRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02D1675F188FF800BA3C9AE2E2293962 /* LLRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2518D1AB6A7EFCBE1E50E2BE019AE /* LLRouterManager.m */; };
+		032981E6676F9A5F2356BC12DB3C8FF1 /* LLRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE89FD4770D6751409925E82C9D8358F /* LLRouter-dummy.m */; };
+		6B0D45EF04D205E8EEA3491DEE0F9C1C /* LLRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B0758B9585EDE75D4613CC7067B167CF /* LLRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AEFC77649BA53A1F7AF54C7BA97EBF23 /* LLRouterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC28E379B96912E4269921F9A78E78C /* LLRouterManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C07E8C033AC3F36AC9F51D09D38E2025 /* LLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDDA464B69E9BB271DBD5125234BE4C /* LLRouter.m */; };
 		DF398D6CF84928534934A0693D3EED33 /* Pods-LLRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAEB9686ACD35A9F5CB9AFE8C27CA51 /* Pods-LLRouter-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -26,23 +26,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A2518D1AB6A7EFCBE1E50E2BE019AE /* LLRouterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLRouterManager.m; path = LLRouterClass/LLRouterManager.m; sourceTree = "<group>"; };
+		0FDDA464B69E9BB271DBD5125234BE4C /* LLRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLRouter.m; path = LLRouterClass/LLRouter.m; sourceTree = "<group>"; };
 		127E593DBC947C5492F4BCD23C87772F /* libPods-LLRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LLRouter.a"; path = "libPods-LLRouter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		19B4F8458CCF42FFE1AD1BEBDFA39A8D /* LLRouterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLRouterManager.h; path = LLRouterClass/LLRouterManager.h; sourceTree = "<group>"; };
-		2A12DBD2D0F1B381DF5515CC763C0980 /* LLRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLRouter-prefix.pch"; sourceTree = "<group>"; };
-		3E9574E7A8F951E86BA19C4F6A19EBD6 /* LLRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLRouter-dummy.m"; sourceTree = "<group>"; };
+		3FC28E379B96912E4269921F9A78E78C /* LLRouterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLRouterManager.h; path = LLRouterClass/LLRouterManager.h; sourceTree = "<group>"; };
 		40A7A2D0D0F65772860B3A1A1E3CF63D /* libLLRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLLRouter.a; path = libLLRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE7BC0A621B79B9D6FD21DAB0D50278 /* LLRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLRouter.xcconfig; sourceTree = "<group>"; };
 		660526CA78C6490F4AEBBEFE1E41A070 /* Pods-LLRouter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLRouter-resources.sh"; sourceTree = "<group>"; };
 		6BF14B75F9649F1F73EA71837BA4B618 /* Pods-LLRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLRouter.release.xcconfig"; sourceTree = "<group>"; };
-		83D0DF7238DA40EF58E89F3E118B172B /* LLRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLRouter.m; path = LLRouterClass/LLRouter.m; sourceTree = "<group>"; };
+		85DCA7BCE6E10A7C1244CAD044D4973F /* LLRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8E9C5F232F93A194499D59E33AFDDDBC /* Pods-LLRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLRouter.debug.xcconfig"; sourceTree = "<group>"; };
-		8ECC398EA43EFA2B2A3CE4B4C4B9E3BE /* LLRouterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLRouterManager.m; path = LLRouterClass/LLRouterManager.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B62B0EA19E6864DAFEA66D17E8E08C33 /* LLRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLRouter.h; path = LLRouterClass/LLRouter.h; sourceTree = "<group>"; };
-		C9F5D68E6C5420BA3E0ADD362A1DA461 /* LLRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLRouter.xcconfig; sourceTree = "<group>"; };
+		AD05FABBAFE565D4EEB31AA6EBF684F4 /* LLRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLRouter-prefix.pch"; sourceTree = "<group>"; };
+		B0758B9585EDE75D4613CC7067B167CF /* LLRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLRouter.h; path = LLRouterClass/LLRouter.h; sourceTree = "<group>"; };
+		CC382CD99EB2AF1E1D0BA1E4436D9C95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CEAEB9686ACD35A9F5CB9AFE8C27CA51 /* Pods-LLRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LLRouter-dummy.m"; sourceTree = "<group>"; };
 		E68EB291C4E4CDE89DFE5ACE25C86AFC /* Pods-LLRouter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LLRouter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB1DF5195AC3D5E51C89C389CC3CC561 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		EFCBC97DA0074B034386F58D9B83A4DE /* Pods-LLRouter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLRouter-acknowledgements.plist"; sourceTree = "<group>"; };
 		F34B908791E4147F02FBBF256CC385C4 /* Pods-LLRouter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLRouter-frameworks.sh"; sourceTree = "<group>"; };
+		FE89FD4770D6751409925E82C9D8358F /* LLRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLRouter-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,36 +88,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7D320D0406C4A289732F0C3D1FAB7D63 /* LLRouter */ = {
+		2373E0D89C91D3B1DAC967BC216C4E56 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B62B0EA19E6864DAFEA66D17E8E08C33 /* LLRouter.h */,
-				83D0DF7238DA40EF58E89F3E118B172B /* LLRouter.m */,
-				19B4F8458CCF42FFE1AD1BEBDFA39A8D /* LLRouterManager.h */,
-				8ECC398EA43EFA2B2A3CE4B4C4B9E3BE /* LLRouterManager.m */,
-				E692546F4F05D2F14E0CCF55E0FA2589 /* Support Files */,
+				84706F303085BFF5051E2F5BB54223C4 /* LLRouter */,
 			);
-			name = LLRouter;
-			path = ..;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6327460B77A4B3293E99B00B76309407 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EB1DF5195AC3D5E51C89C389CC3CC561 /* LICENSE */,
+				85DCA7BCE6E10A7C1244CAD044D4973F /* LLRouter.podspec */,
+				CC382CD99EB2AF1E1D0BA1E4436D9C95 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				81716DD31476BC02EC77F6D9D693A704 /* Development Pods */,
+				2373E0D89C91D3B1DAC967BC216C4E56 /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				BF16479B5981D5F8DA5FCFB6CFA6585B /* Products */,
 				A1C09F19169190B5CC2D67029759BD63 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81716DD31476BC02EC77F6D9D693A704 /* Development Pods */ = {
+		84706F303085BFF5051E2F5BB54223C4 /* LLRouter */ = {
 			isa = PBXGroup;
 			children = (
-				7D320D0406C4A289732F0C3D1FAB7D63 /* LLRouter */,
+				B0758B9585EDE75D4613CC7067B167CF /* LLRouter.h */,
+				0FDDA464B69E9BB271DBD5125234BE4C /* LLRouter.m */,
+				3FC28E379B96912E4269921F9A78E78C /* LLRouterManager.h */,
+				03A2518D1AB6A7EFCBE1E50E2BE019AE /* LLRouterManager.m */,
+				6327460B77A4B3293E99B00B76309407 /* Pod */,
+				F5160D4AA5E09098684F7C0271C1C10E /* Support Files */,
 			);
-			name = "Development Pods";
+			name = LLRouter;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A1C09F19169190B5CC2D67029759BD63 /* Targets Support Files */ = {
@@ -134,12 +148,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E692546F4F05D2F14E0CCF55E0FA2589 /* Support Files */ = {
+		F5160D4AA5E09098684F7C0271C1C10E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9F5D68E6C5420BA3E0ADD362A1DA461 /* LLRouter.xcconfig */,
-				3E9574E7A8F951E86BA19C4F6A19EBD6 /* LLRouter-dummy.m */,
-				2A12DBD2D0F1B381DF5515CC763C0980 /* LLRouter-prefix.pch */,
+				5DE7BC0A621B79B9D6FD21DAB0D50278 /* LLRouter.xcconfig */,
+				FE89FD4770D6751409925E82C9D8358F /* LLRouter-dummy.m */,
+				AD05FABBAFE565D4EEB31AA6EBF684F4 /* LLRouter-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Pods/Target Support Files/LLRouter";
@@ -152,8 +166,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA99A25517AC597C61673B4B2C616E8 /* LLRouter.h in Headers */,
-				3F2A6BC9EBDB5ED81807347788082A2C /* LLRouterManager.h in Headers */,
+				6B0D45EF04D205E8EEA3491DEE0F9C1C /* LLRouter.h in Headers */,
+				AEFC77649BA53A1F7AF54C7BA97EBF23 /* LLRouterManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,69 +266,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25CCFC52C1BBB59DB509CC31F4AE36A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E9C5F232F93A194499D59E33AFDDDBC /* Pods-LLRouter.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2DC53FEBD9644C06F56FC2D2DFEB89C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BF14B75F9649F1F73EA71837BA4B618 /* Pods-LLRouter.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BEDC20FD3B0E7EC588041161CD09D0C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F5D68E6C5420BA3E0ADD362A1DA461 /* LLRouter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LLRouter/LLRouter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,6 +298,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -370,16 +323,58 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D3CAC67F7F1217B363458BFDD655EA1F /* Release */ = {
+		4CC88F5AB5BE803B4981F56BE5A46CEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F5D68E6C5420BA3E0ADD362A1DA461 /* LLRouter.xcconfig */;
+			baseConfigurationReference = 6BF14B75F9649F1F73EA71837BA4B618 /* Pods-LLRouter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C248166199B5A4327CACFAD27C6AD568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9C5F232F93A194499D59E33AFDDDBC /* Pods-LLRouter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D70E96B9FB68B86841A409148B9D0299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE7BC0A621B79B9D6FD21DAB0D50278 /* LLRouter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -390,6 +385,31 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LLRouter;
+				PRODUCT_NAME = LLRouter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2A759B463689CCDD1576BACE76BADE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE7BC0A621B79B9D6FD21DAB0D50278 /* LLRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LLRouter/LLRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LLRouter;
+				PRODUCT_NAME = LLRouter;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -399,7 +419,7 @@
 			};
 			name = Release;
 		};
-		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,6 +451,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -451,7 +472,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -463,8 +483,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
-				DA03565BE765DB55C6448FB363A44481 /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -472,8 +492,8 @@
 		A3A635446E2538A75ACFE3FD81F1AECA /* Build configuration list for PBXNativeTarget "Pods-LLRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25CCFC52C1BBB59DB509CC31F4AE36A8 /* Debug */,
-				2DC53FEBD9644C06F56FC2D2DFEB89C6 /* Release */,
+				C248166199B5A4327CACFAD27C6AD568 /* Debug */,
+				4CC88F5AB5BE803B4981F56BE5A46CEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -481,8 +501,8 @@
 		FF3A8771ADBF7E066A7FB5C3C23A45DE /* Build configuration list for PBXNativeTarget "LLRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEDC20FD3B0E7EC588041161CD09D0C4 /* Debug */,
-				D3CAC67F7F1217B363458BFDD655EA1F /* Release */,
+				D70E96B9FB68B86841A409148B9D0299 /* Debug */,
+				E2A759B463689CCDD1576BACE76BADE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

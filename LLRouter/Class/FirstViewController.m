@@ -22,7 +22,7 @@
 
 - (IBAction)pushAction:(id)sender {
     //    [LLSpeedRoute routeWithUrl:[NSURL URLWithString:llspeed_routeWithBegin] currentVC:self hidesBottomBarWhenPushed:YES parameterDict:nil];
-    [LLRouter routeWithUrl:[NSURL URLWithString:llspeed_routeWithBegin] currentVC:self hidesBottomBarWhenPushed:YES parameterDict:nil];
+    [LLRouter routerWithUrl:[NSURL URLWithString:llspeed_routerWithBegin] currentVC:self hidesBottomBarWhenPushed:YES parameterDict:nil];
 }
 
 - (void)didReceiveMemoryWarning {

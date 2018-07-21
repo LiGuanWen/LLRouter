@@ -44,7 +44,7 @@
         NSString *routerName = nil;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-        SEL routeNameSelector = @selector(routeName);
+        SEL routeNameSelector = @selector(routerName);
 #pragma clang diagnostic pop
         if(routerClass && [routerClass respondsToSelector:routeNameSelector]){
 #pragma clang diagnostic push
